@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/books"
+        android:label="Book Library"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SQLiteBookLibraryApp"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".UpdateDetails"
+            android:parentActivityName=".MainActivity"
+            android:label="Update Details"
+            android:exported="false" />
+        <activity
+            android:name=".SplshscreenActivity"
+            android:exported="true"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDetails"
+            android:exported="false"
+            android:label="Add Book"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Book Library" />
+    </application>
+
+</manifest>

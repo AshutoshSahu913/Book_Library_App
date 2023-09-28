@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SQLite (Book Library App)</string>
+    <string name="title_activity_splshscreen">SplshscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
